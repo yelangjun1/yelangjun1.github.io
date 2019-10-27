@@ -1,3 +1,9 @@
+console.log(
+        "\n%cLINK:%chttp://yelangjun1.github.io/  %c\n\n",
+        "padding:10px;color:#ecf0f1;background-color:#2c3e50;margin-bottom:10px;",
+        "padding:10px;color:#2980b9;background-color:#ecf0f1;margin-bottom:10px;", 
+        "background-color:none;" 
+    );
 var num = 0;
 var num_list =1;
 var a_1 = document.getElementsByClassName('change_image');
@@ -21,3 +27,6 @@ var a_1 = document.getElementsByClassName('change_image');
 				}
 			}
 		},10000);
+
+
+
