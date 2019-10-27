@@ -9,6 +9,7 @@
 	position: absolute;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position:center center;
 }
 #bg:after{
 	content: "";
@@ -140,5 +141,6 @@
 	background-size: cover;
 	opacity: 1;
 	transition: opacity 5s;
+	background-position:center center;
 }
 
