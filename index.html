@@ -2,10 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="static/index.css">
+	<title>测试网页</title>
+	<link rel="stylesheet" type="text/css" href="static/css/index.css">
+	<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+	
 </head>
 <body>
-	<h1>测试用</h1>
+	<div id="bg" style="background-image: url('static/img/bg_1.jpg');">
+		<div id="bg_split">
+			<div id="middle">
+				<div id="head_portrait">
+					<div id="head_bg"></div>
+					<img src="static/img/head.jpg">
+				</div>
+				<div id="name_introduction">
+					<p class="text_name">野狼君</p>
+					<p class="intorduce">Just write about nothing</p>
+				</div>
+				<div id="list_bar">
+					<div class="list_text"><a href="" class="list_text_a">BiliBli</a></div>
+					<div class="list_text"><a href="" class="list_text_a">GitHub</a></div>
+					<div class="list_text"><a href="" class="list_text_a">QQ</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bg_bg_bg" >
+		<div class="change_image" style="background-image: url('static/img/bg_1.jpg');z-index: 1"></div>
+		<div class="change_image" style="z-index: 0"></div>	
+	</div>
+	<script type="text/javascript" src="static/js/index.js"></script>
 </body>
 </html>
