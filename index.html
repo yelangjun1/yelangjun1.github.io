@@ -2,37 +2,200 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>测试网页</title>
-	<link rel="stylesheet" type="text/css" href="static/css/index.css">
-	<link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="static/bootstrap-3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
+	<title>Document</title>
+	<style type="text/css">
+		.main_body{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-image: url(static/img/2.jpg);
+			background-position: center;
+		}
+		.main_bg{
+			width: 100%;
+			height: 100%;
+			background-image: url(static/img/2.jpg);
+			background-position: center;
+			position: absolute;
+			filter: blur(5px);
+		}
+		.head_div{
+			width: 150px;
+			height: 150px;
+			border: 1px solid rgba(255,255,255,0.5);
+			overflow:hidden;
+			border-radius: 5px;
+			position: absolute;
+			margin-top: -50px;
+		}
+		.head_img{
+			width: 100%;
+			height: 100%;
+		}
+		.juzhong{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+		.username{
+			width: 220px;
+			height: 60px;
+			position: absolute;
+			margin-top: 50px;
+			border-bottom: 2px solid rgba(255,255,255,0.8);
+			color:white;
+			font-size: 20px;
+		}
+		.tag{
+			width: 220px;
+			height: 30px;
+			position: absolute;
+			margin-top: 100px;
+		}
+		.tag_ul{
+			padding: 0px;
+			margin: 0px;
+			list-style-type: none;
+		}
+		.tag_li{
+			display: inline;
+			font-size: 14px;
+			height: 90%;
+		}
+		.font_s{
+			font-size: 10px;
+			padding-left: 4px;
+		}
+		.i_style{
+			color: white;
+			font-size: 10px;
+			border-right: 1px solid rgba(255,255,255,0.6);
+			padding-right: 4px;
+		}
+		.bottom_tag{
+			height: 40px;
+			position: absolute;
+			margin-top: 160px;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+		.bottom_tag_ul{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
 
+		}
+		.bottom_tag_li{
+			display: inline-table;
+			color: white;
+			float: center;
+			padding-top: 10px;
 
+		}
+		.i_style_bottom{
+			font-size: 15px;
+
+		}
+		.font_s_bottom{
+			font-size: 13px;
+			padding-left: 2px;
+			padding-right:10px;
+		}
+		.a_bottom{
+			text-decoration: none;
+			color: white;
+		}
+		.a_bottom:hover{
+			color: rgba(0,0,0,1);
+		}
+	</style>
 </head>
 <body>
-	<div id="bg" style="background-image: url('static/img/bg_1.jpg');">
-		<div id="bg_split">
-			<div id="middle">
-				<div id="head_portrait">
-					<div id="head_bg"></div>
-					<img src="static/img/head.jpg">
-				</div>
-				<div id="name_introduction">
-					<p class="text_name">野狼君</p>
-					<p class="intorduce">Just write about nothing</p>
-				</div>
-				<div id="list_bar">
-					<div class="list_text"><a href="" class="list_text_a">BiliBli</a></div>
-					<div class="list_text"><a href="" class="list_text_a">GitHub</a></div>
-					<div class="list_text"><a href="" class="list_text_a">QQ</a></div>
-				</div>
+	<div class="main_body">
+		<div class="main_bg"></div>
+		<div style="width: 100%;height:100%;position: relative;" class="juzhong">
+			<div class="head_div">
+				<img src="static/img/1.png" class="head_img">
+			</div>
+			<div class="username juzhong">
+				Hi,I'm YELang
+			</div>
+			<div class="tag juzhong">
+				<ul class="tag_ul">
+					<li class="tag_li juzhong">
+						<i class="fa fa-mars i_style"><span class="font_s">Male</span></i>
+					</li>
+					<li class="tag_li juzhong">
+						<i class="fa fa-flag i_style"><span class="font_s">China</span></i>
+					</li>
+					<li class="tag_li juzhong">
+						<i class="fa fa-id-card-o i_style" ><span class="font_s">Student</span></i>
+					</li>
+					<li class="tag_li juzhong">
+						<i class="fa fa-code i_style"><span class="font_s">python</span></i>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom_tag">
+				<ul class="bottom_tag_ul">
+					
+					<li class="bottom_tag_li">
+						<a href="#" class="a_bottom">
+						<i class="fa fa-weixin i_style_bottom">
+							<span class="font_s_bottom">WeChat</span>
+						</i>
+						</a>
+					</li>
+					
+					<li class="bottom_tag_li">
+						<a href="https://i.qq.com/?s_url=http%3A%2F%2Fuser.qzone.qq.com%2F2275203821&rd=1" class="a_bottom">
+						<i class="fa fa-star i_style_bottom">
+							<span class="font_s_bottom">QZone</span>
+						</i>
+						</a>
+					</li>
+					<li class="bottom_tag_li">
+						<a href="https://github.com/yelangjun1"  class="a_bottom">
+						<i class="fa fa-github i_style_bottom">
+							<span class="font_s_bottom">GitHub</span>
+						</i>
+						</a>
+					</li>
+					<li class="bottom_tag_li">
+						<a href="https://weibo.com/" class="a_bottom">
+						<i class="fa fa-weibo i_style_bottom">
+							<span class="font_s_bottom">Sina</span>
+						</i>
+						</a>
+					</li>
+					<li class="bottom_tag_li">
+						<a href="#" class="a_bottom">
+						<i class="fa fa-steam i_style_bottom">
+							<span class="font_s_bottom">Steam</span>
+						</i>
+						</a>
+					</li>
+					<li class="bottom_tag_li">
+						<a href="#" class="a_bottom">
+						<i class="fa fa-twitter i_style_bottom">
+							<span class="font_s_bottom">Twitter</span>
+						</i>
+						</a>
+					</li>
+					<li class="bottom_tag_li">
+						<a href="#" class="a_bottom">
+						<i class="fa fa-envelope i_style_bottom">
+							<span class="font_s_bottom">email</span>
+						</i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-	<div id="bg_bg_bg" >
-		<div class="change_image" style="background-image: url('static/img/bg_1.jpg');z-index: 1"></div>
-		<div class="change_image" style="z-index: 0"></div>	
-	</div>
-	<script type="text/javascript" src="static/js/index.js"></script>
 </body>
 </html>
